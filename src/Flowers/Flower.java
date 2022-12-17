@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Flower {
     private final String flowerName;
     private final String country;
-    private final double cost;
+    private double cost;
     private int lifeSpan;
 
     Flower(String flowerName, String country, double cost, int lifeSpan) {
@@ -49,6 +49,10 @@ public class Flower {
 
     public int getLifeSpan() {
         return lifeSpan;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
     public void setLifeSpan(int lifeSpan) {
